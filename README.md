@@ -30,13 +30,8 @@ Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis
 
 ## Bildnachweise (Ordner `images/`)
 
-Die Fotos wurden verkleinert, ohne Kameradaten gespeichert und teils als Ausschnitt gezeigt. Bearbeitete Fassungen von CC-BY-SA-Fotos stehen unter derselben Lizenz.
+Die Fotos wurden verkleinert, ohne Kameradaten gespeichert und teils als Ausschnitt gezeigt.
 
-- `graz-daecher.jpg`: Leonhard Niederwimmer, https://unsplash.com/photos/a-city-with-many-buildings-UIYd0bNIvrQ, Unsplash-Lizenz
 - `uhrturm-abend.jpg`: Laszlo Biro, https://unsplash.com/photos/a-clock-tower-in-the-middle-of-a-city-at-night-tVwOW-Ikklc, Unsplash-Lizenz
-- `amateurfussball.jpg` (Symbolbild): sporlab, https://unsplash.com/photos/a-soccer-field-with-players-on-it-at-night-ggUrWc5Pg9o, Unsplash-Lizenz
+- `sturm-fahne.jpg`: jorono, Pixabay (Nr. 3566647), Pixabay-Inhaltslizenz
 - `liebenau-abend.jpg` und `schal-klagenfurt.jpg`: eigene Fotos von Günter Kohlhofer
-- `sturm-fans.jpg`: Steindy, https://commons.wikimedia.org/wiki/File:Fans_des_SK_Sturm_Graz.jpg, CC BY-SA 2.0 DE
-- `sturm-choreo.jpg`: Jacktd, https://commons.wikimedia.org/wiki/File:Sturm-Choreo.jpg, CC BY-SA 3.0
-- `stadion-liebenau.jpg`: Thomas Ledl, https://commons.wikimedia.org/wiki/File:Merkur-Arena,_Graz_2.jpg, CC BY 4.0
-- `stadion-klagenfurt.jpg`: Arne Müseler / www.arne-mueseler.com, https://commons.wikimedia.org/wiki/File:Stadium_klagenfurt_aerial_view.jpg, CC BY-SA 3.0 DE
