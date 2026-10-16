@@ -281,6 +281,21 @@ article h3 { font-family: var(--sans); }
 .photo-pair .pair img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--wash); }
 @media (max-width: 560px) { .photo-pair .pair { grid-template-columns: 1fr; } }
 .photo-pair figcaption { font-size: 0.7rem; margin-top: 0.3rem; }
+
+/* Verschiebbares Inhaltsverzeichnis, breiterer Text am Computer */
+@media (min-width: 1120px) {
+  .layout, .layout:has(.toc-wide > details:not([open])) { grid-template-columns: minmax(0, 50rem); }
+  .toc-wide { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 1rem); left: 1rem; width: 15rem; max-height: calc(100vh - 2rem); overflow-y: auto; padding: 0.7rem 0.9rem 0.5rem; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18); z-index: 25; }
+  .toc-wide > details > summary { cursor: grab; touch-action: none; user-select: none; }
+  .toc-wide.dragging, .toc-wide.dragging > details > summary { cursor: grabbing; }
+  .toc-wide > details > summary.toc-title { margin: 0 0 0.7rem; }
+  .toc-wide > details:not([open]) > summary.toc-title { margin: 0; }
+  .toc-wide > details > summary::after { transform: translateY(0.1rem) rotate(225deg); }
+  .toc-wide > details:not([open]) > summary { flex-direction: row; gap: 0.75rem; }
+  .toc-wide > details:not([open]) > summary::after { transform: translateY(-0.15rem) rotate(45deg); margin: 0 0.35rem 0 0; }
+  .toc-wide > details:not([open]) .toc-label { writing-mode: horizontal-tb; transform: none; }
+  .toc-wide .toc-label::before { content: "⠿"; margin-right: 0.45rem; color: var(--graphite); font-weight: 400; }
+}
 </style>
 </head>
 <body>
@@ -659,6 +674,66 @@ article h3 { font-family: var(--sans); }
   };
   window.addEventListener('scroll', update, { passive: true });
   update();
+})();
+</script>
+<script>
+(function () {
+  var nav = document.querySelector('.toc-wide');
+  var det = nav && nav.querySelector('details');
+  var sum = det && det.querySelector('summary');
+  if (!sum) return;
+  var mq = window.matchMedia('(min-width: 1120px)');
+  var key = 'sturm-inhalt';
+  sum.title = 'Ziehen zum Verschieben, klicken zum Ein- und Ausklappen';
+  function place(x, y) {
+    var w = nav.offsetWidth || 240;
+    x = Math.max(4, Math.min(window.innerWidth - w - 4, x));
+    y = Math.max(4, Math.min(window.innerHeight - 48, y));
+    nav.style.left = x + 'px';
+    nav.style.top = y + 'px';
+    nav.style.maxHeight = (window.innerHeight - y - 12) + 'px';
+  }
+  function save() {
+    try {
+      var r = nav.getBoundingClientRect();
+      localStorage.setItem(key, JSON.stringify({ x: r.left, y: r.top, open: det.open }));
+    } catch (e) {}
+  }
+  if (mq.matches) {
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem(key) || 'null'); } catch (e) {}
+    if (s) { place(s.x, s.y); det.open = !!s.open; }
+    else if (window.innerWidth < 1400) { det.open = false; }
+  }
+  var start = null, moved = false, suppress = false;
+  sum.addEventListener('pointerdown', function (e) {
+    if (!mq.matches || e.button !== 0) return;
+    var r = nav.getBoundingClientRect();
+    start = { x: e.clientX, y: e.clientY, l: r.left, t: r.top };
+    moved = false;
+    try { sum.setPointerCapture(e.pointerId); } catch (err) {}
+  });
+  sum.addEventListener('pointermove', function (e) {
+    if (!start) return;
+    var dx = e.clientX - start.x, dy = e.clientY - start.y;
+    if (!moved && Math.abs(dx) + Math.abs(dy) < 5) return;
+    moved = true;
+    nav.classList.add('dragging');
+    place(start.l + dx, start.t + dy);
+  });
+  function end() {
+    if (!start) return;
+    if (moved) { suppress = true; save(); }
+    nav.classList.remove('dragging');
+    start = null;
+  }
+  sum.addEventListener('pointerup', end);
+  sum.addEventListener('pointercancel', end);
+  sum.addEventListener('click', function (e) { if (suppress) { e.preventDefault(); suppress = false; } });
+  det.addEventListener('toggle', save);
+  window.addEventListener('resize', function () {
+    if (mq.matches && nav.style.left) place(parseFloat(nav.style.left), parseFloat(nav.style.top));
+  });
 })();
 </script>
 </body>

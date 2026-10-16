@@ -10,13 +10,13 @@ Eine einzelne Seite (`index.html`) mit eingebettetem CSS und einem kleinen eigen
 
 ## Datenschutz
 
-- Keine Cookies, kein localStorage, keine Tracker, keine eingebetteten Inhalte Dritter.
+- Keine Cookies, keine Tracker, keine eingebetteten Inhalte Dritter.
 - Schriften werden lokal aus dem Ordner `fonts/` geladen, es gehen keine Anfragen an Google oder andere Schriftanbieter.
 - Links zu den Quellen führen erst beim Anklicken zu den jeweiligen Webseiten.
 - GitHub Pages protokolliert laut eigener Dokumentation die IP-Adressen der Besucher.
 - Die Seite darf von Suchmaschinen aufgenommen werden (kein noindex).
 - Die Teilen-Buttons sind einfache Links ohne eingebettete Skripte von Facebook, WhatsApp und Co. Eine Verbindung zum jeweiligen Dienst entsteht erst beim Anklicken.
-- Ein kleines eigenes Skript in `index.html` steuert nur „Link kopieren“, die Lesefortschrittsleiste und den Nach-oben-Knopf. Es speichert nichts.
+- Ein kleines eigenes Skript in `index.html` steuert „Link kopieren“, die Lesefortschrittsleiste, den Nach-oben-Knopf und das verschiebbare Inhaltsverzeichnis. Dessen Position und ob es offen ist, merkt sich nur der Browser des Besuchers (localStorage); es wird nichts übertragen.
 - `og-image.png` ist das Vorschaubild, das Facebook und Messenger beim Teilen anzeigen.
 
 ## Quellen
