@@ -41,28 +41,28 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #000000;
-    --ink: #f3f3ef;
-    --graphite: #b4b4ac;
-    --rule: #33332f;
-    --wash: #161614;
-    --green: #6cc38f;
-    --green-wash: #10261a;
-    --bar: #55554f;
-    --track: #24241f;
+    --paper: #1f1f1d;
+    --ink: #e3e1da;
+    --graphite: #a9a79e;
+    --rule: #3b3b37;
+    --wash: #272725;
+    --green: #7fc79c;
+    --green-wash: #233529;
+    --bar: #64645d;
+    --track: #31312e;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #000000;
-  --ink: #f3f3ef;
-  --graphite: #b4b4ac;
-  --rule: #33332f;
-  --wash: #161614;
-  --green: #6cc38f;
-  --green-wash: #10261a;
-  --bar: #55554f;
-  --track: #24241f;
+  --paper: #1f1f1d;
+  --ink: #e3e1da;
+  --graphite: #a9a79e;
+  --rule: #3b3b37;
+  --wash: #272725;
+  --green: #7fc79c;
+  --green-wash: #233529;
+  --bar: #64645d;
+  --track: #31312e;
   color-scheme: dark;
 }
 *, *::before, *::after { box-sizing: inherit; }
@@ -96,8 +96,14 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outlin
 .toc a:hover { color: var(--ink); text-decoration: underline; }
 .toc-title { font-family: var(--display); font-weight: 800; font-size: 1.35rem; margin: 0 0 0.9rem; }
 .toc-wide { display: none; }
+details.toc > summary, .toc details > summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+details.toc > summary::-webkit-details-marker, .toc details > summary::-webkit-details-marker { display: none; }
+details.toc > summary::after, .toc details > summary::after { content: ""; flex: none; width: 0.5rem; height: 0.5rem; margin-right: 0.35rem; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-0.15rem) rotate(45deg); }
+details.toc:not([open]) > summary::after, .toc details:not([open]) > summary::after { transform: rotate(-45deg); }
+.toc details > summary.toc-title { margin: 0 0 0.9rem; }
+.toc details:not([open]) > summary.toc-title { margin-bottom: 0; }
 @media (min-width: 1120px) {
-  .toc-wide { display: block; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 2rem); align-self: start; padding-top: 3.2rem; max-height: calc(100vh - 2rem); overflow-y: auto; }
+  .toc-wide { display: block; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 2rem); align-self: start; padding-top: 3.2rem; max-height: calc(100vh - 2rem); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--rule) transparent; padding-right: 0.5rem; }
   .toc-narrow { display: none; }
 }
 .toc-narrow { margin: 2rem 0 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.4rem 0; }
@@ -227,8 +233,10 @@ footer { padding: 3rem clamp(1.25rem, 5vw, 3rem) 3.5rem; text-align: center; fon
 
 <div class="layout">
   <nav class="toc toc-wide" aria-label="Inhalt">
-    <p class="toc-title">Inhalt</p>
+    <details open>
+    <summary class="toc-title">Inhalt</summary>
     <ul><li><a href="#anlass-der-ausstieg-der-holding-graz">Anlass: Der Ausstieg der Holding Graz</a></li><li><a href="#die-zahlen-auf-einen-blick">Die Zahlen auf einen Blick</a></li><li><a href="#fussball-ist-ein-wirtschaftszweig">Fußball ist ein Wirtschaftszweig</a></li><li><a href="#sponsoring-statt-foerderung-was-die-holding-selbst-gemessen-hat">Sponsoring statt Förderung: Was die Holding selbst gemessen hat</a></li><li><a href="#was-direkt-bei-der-stadt-ankommt">Was direkt bei der Stadt ankommt</a></li><li><a href="#breitensport-und-spitzensport">Breitensport und Spitzensport</a></li><li><a href="#internationale-studien-und-vergleiche">Internationale Studien und Vergleiche</a></li><li><a href="#soziales-engagement-von-verein-und-fans">Soziales Engagement von Verein und Fans</a></li><li><a href="#der-sk-sturm-im-ueberblick">Der SK Sturm im Überblick</a></li><li><a href="#die-stadionfrage">Die Stadionfrage</a></li><li><a href="#politische-chronologie">Politische Chronologie</a></li><li><a href="#einordnung-was-die-zahlen-aussagen-und-was-nicht">Einordnung: Was die Zahlen aussagen und was nicht</a></li><li><a href="#fazit">Fazit</a></li><li><a href="#quellen">Quellen</a></li></ul>
+    </details>
   </nav>
   <main>
     <details class="toc toc-narrow">
