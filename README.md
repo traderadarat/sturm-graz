@@ -35,3 +35,4 @@ Die Fotos wurden verkleinert, ohne Kameradaten gespeichert und teils als Ausschn
 - `uhrturm-abend.jpg`: Laszlo Biro, https://unsplash.com/photos/a-clock-tower-in-the-middle-of-a-city-at-night-tVwOW-Ikklc, Unsplash-Lizenz
 - `sturm-fahne.jpg`: jorono, Pixabay (Nr. 3566647), Pixabay-Inhaltslizenz
 - `liebenau-abend.jpg` und `schal-klagenfurt.jpg`: eigene Fotos von Günter Kohlhofer
+- `zebra-skeptisch.jpg` (Symbolbild): Eric Kilby, https://commons.wikimedia.org/wiki/File:Zebra_Portrait.jpg, CC BY-SA 2.0. Die bearbeitete Fassung steht unter derselben Lizenz.
