@@ -6,7 +6,7 @@ Text und Recherche: Günter Kohlhofer, Graz, Stand 16. Oktober 2026.
 
 ## Aufbau
 
-Eine einzelne Seite (`index.html`) mit eingebettetem CSS, ohne JavaScript. Die Grafiken bestehen aus reinem HTML und CSS. Änderungen am Text direkt in `index.html` vornehmen und die Seite neu veröffentlichen.
+Eine einzelne Seite (`index.html`) mit eingebettetem CSS und einem kleinen eigenen Skript. Die Grafiken bestehen aus reinem HTML und CSS. Änderungen am Text direkt in `index.html` vornehmen und die Seite neu veröffentlichen.
 
 ## Datenschutz
 
@@ -15,6 +15,9 @@ Eine einzelne Seite (`index.html`) mit eingebettetem CSS, ohne JavaScript. Die G
 - Links zu den Quellen führen erst beim Anklicken zu den jeweiligen Webseiten.
 - GitHub Pages protokolliert laut eigener Dokumentation die IP-Adressen der Besucher.
 - Die Seite darf von Suchmaschinen aufgenommen werden (kein noindex).
+- Die Teilen-Buttons sind einfache Links ohne eingebettete Skripte von Facebook, WhatsApp und Co. Eine Verbindung zum jeweiligen Dienst entsteht erst beim Anklicken.
+- Ein kleines eigenes Skript in `index.html` steuert nur „Link kopieren“, die Lesefortschrittsleiste und den Nach-oben-Knopf. Es speichert nichts.
+- `og-image.png` ist das Vorschaubild, das Facebook und Messenger beim Teilen anzeigen.
 
 ## Quellen
 
