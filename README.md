@@ -27,3 +27,13 @@ Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis
 
 - Big Shoulders Display, SIL Open Font License 1.1 (`fonts/OFL-bigshouldersdisplay.txt`)
 - Source Serif 4, SIL Open Font License 1.1 (`fonts/OFL-sourceserif4.txt`)
+
+## Bildnachweise (Ordner `images/`)
+
+Alle Fotos stammen von Wikimedia Commons, wurden verkleinert und teils als Ausschnitt gezeigt. Bearbeitete Fassungen von CC-BY-SA-Fotos stehen unter derselben Lizenz.
+
+- `graz-panorama.jpg`: TobyATwork, https://commons.wikimedia.org/wiki/File:Graz_Panorama.jpg, CC0
+- `sturm-fans.jpg`: Steindy, https://commons.wikimedia.org/wiki/File:Fans_des_SK_Sturm_Graz.jpg, CC BY-SA 2.0 DE
+- `sturm-choreo.jpg`: Jacktd, https://commons.wikimedia.org/wiki/File:Sturm-Choreo.jpg, CC BY-SA 3.0
+- `stadion-liebenau.jpg`: Thomas Ledl, https://commons.wikimedia.org/wiki/File:Merkur-Arena,_Graz_2.jpg, CC BY 4.0
+- `stadion-klagenfurt.jpg`: Arne Müseler / www.arne-mueseler.com, https://commons.wikimedia.org/wiki/File:Stadium_klagenfurt_aerial_view.jpg, CC BY-SA 3.0 DE
