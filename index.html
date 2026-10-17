@@ -369,6 +369,15 @@ article a:not(.sh), .sources a { text-underline-offset: 0.18em; }
 .legal a { color: inherit; }
 .korrektur { margin: 2.2rem 0 0; padding: 1rem 1.2rem; background: var(--wash); border-left: 5px solid var(--green); border-radius: 0 6px 6px 0; font-family: var(--sans); font-size: 0.98rem; line-height: 1.55; }
 .korrektur p { margin: 0; }
+
+/* Gold statt Gruen, passend zu den Bildkacheln */
+html:root:not([data-theme="dark"]) { --green: #8a6400; --green-wash: #fff4cc; --gold: #e8ad00; }
+html:root[data-theme="dark"] { --green: #ffd400; --green-wash: #2e2600; --gold: #ffd400; }
+.bar-row.hi .bar-fill, .col.hi .col-bar, .legend .key.hi i, .progress, article h2::before, .timeline li::before { background: var(--gold); }
+.bar-row.planned .bar-fill { border-color: var(--gold); }
+.kurz, .korrektur, blockquote { border-left-color: var(--gold); }
+.sh.copy, .sh.native { --dot: var(--gold); }
+.einwand:target { border-color: var(--gold); }
 </style>
 </head>
 <body>
