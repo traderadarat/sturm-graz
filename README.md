@@ -31,7 +31,7 @@ Reine Gestaltungs- oder Technikänderungen kommen nicht ins Änderungsprotokoll.
 - GitHub Pages protokolliert laut eigener Dokumentation die IP-Adressen der Besucher.
 - Die Seite darf von Suchmaschinen aufgenommen werden (kein noindex).
 - Die Teilen-Buttons sind einfache Links ohne eingebettete Skripte von Facebook, WhatsApp und Co. Eine Verbindung zum jeweiligen Dienst entsteht erst beim Anklicken.
-- Ein kleines eigenes Skript in `index.html` steuert „Link kopieren“, die Lesefortschrittsleiste, den Nach-oben-Knopf und das verschiebbare Inhaltsverzeichnis. Dessen Position und ob es offen ist, merkt sich nur der Browser des Besuchers (localStorage); es wird nichts übertragen.
+- Ein kleines eigenes Skript in `index.html` steuert „Link kopieren“, die Lesefortschrittsleiste, den Nach-oben-Knopf, die Quellen-Vorschau beim Darüberfahren oder Antippen der Quellenzahlen und das verschiebbare Inhaltsverzeichnis. Dessen Position und ob es offen ist, merkt sich nur der Browser des Besuchers (localStorage); es wird nichts übertragen.
 - `og-image.png` ist das Vorschaubild, das Facebook und Messenger beim Teilen anzeigen.
 
 ## Quellen
