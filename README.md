@@ -10,12 +10,11 @@ Eine einzelne Seite (`index.html`) mit eingebettetem CSS und einem kleinen eigen
 
 ## Änderungen pflegen
 
-Bei jeder inhaltlichen Änderung an vier Stellen nachziehen:
+Bei jeder inhaltlichen Änderung an drei Stellen nachziehen:
 
-1. Abschnitt „Änderungen“ in `index.html`: neuer Eintrag ganz oben (Datum, was korrigiert oder ergänzt wurde)
-2. Kopfbereich: „zuletzt aktualisiert am …“
-3. Kopf von `index.html`: `dateModified` im JSON-LD und `article:modified_time`
-4. `sitemap.xml`: `lastmod`
+1. Randnotiz „Zuletzt aktualisiert“ ganz unten in `index.html`: Datum und ein kurzer Eintrag
+2. Kopf von `index.html`: `dateModified` im JSON-LD und `article:modified_time`
+3. `sitemap.xml`: `lastmod`
 
 Reine Gestaltungs- oder Technikänderungen kommen nicht ins Änderungsprotokoll.
 
@@ -37,7 +36,7 @@ Reine Gestaltungs- oder Technikänderungen kommen nicht ins Änderungsprotokoll.
 
 ## Quellen
 
-Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (115 Einträge) steht am Ende der Seite. Abrufstand: 17. Oktober 2026.
+Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (123 Einträge) steht am Ende der Seite. Abrufstand: 17. Oktober 2026.
 
 ## Schriftlizenzen
 
