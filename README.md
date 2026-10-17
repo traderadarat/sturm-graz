@@ -35,3 +35,7 @@ Die Fotos wurden verkleinert, ohne Kameradaten gespeichert und teils als Ausschn
 - `uhrturm-abend.jpg`: Laszlo Biro, https://unsplash.com/photos/a-clock-tower-in-the-middle-of-a-city-at-night-tVwOW-Ikklc, Unsplash-Lizenz
 - `sturm-fahne.jpg`: jorono, Pixabay (Nr. 3566647), Pixabay-Inhaltslizenz
 - `liebenau-abend.jpg` und `schal-klagenfurt.jpg`: eigene Fotos von Günter Kohlhofer
+
+## Offenlegung
+
+Offenlegung nach § 25 Mediengesetz und Datenschutzhinweise stehen am Ende der Seite (Abschnitt „Offenlegung und Datenschutz“).
