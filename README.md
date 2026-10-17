@@ -2,11 +2,27 @@
 
 Faktenanalyse zum wirtschaftlichen, gesellschaftlichen und internationalen Wert des SK Sturm Graz für die Stadt Graz: Werbewert, Wertschöpfung, Steuern, Stadionfrage, soziales Engagement von Verein und Fans.
 
-Text und Recherche: Günter Kohlhofer, Graz, Stand 16. Oktober 2026.
+Text und Recherche: Günter Kohlhofer, Graz. Erstveröffentlichung 16. Oktober 2026, zuletzt aktualisiert 17. Oktober 2026.
 
 ## Aufbau
 
 Eine einzelne Seite (`index.html`) mit eingebettetem CSS und einem kleinen eigenen Skript. Die Grafiken bestehen aus reinem HTML und CSS. Änderungen am Text direkt in `index.html` vornehmen und die Seite neu veröffentlichen.
+
+## Änderungen pflegen
+
+Bei jeder inhaltlichen Änderung an vier Stellen nachziehen:
+
+1. Abschnitt „Änderungen“ in `index.html`: neuer Eintrag ganz oben (Datum, was korrigiert oder ergänzt wurde)
+2. Kopfbereich: „zuletzt aktualisiert am …“
+3. Kopf von `index.html`: `dateModified` im JSON-LD und `article:modified_time`
+4. `sitemap.xml`: `lastmod`
+
+Reine Gestaltungs- oder Technikänderungen kommen nicht ins Änderungsprotokoll.
+
+## Suchmaschinen
+
+- `sitemap.xml` und `robots.txt` liegen im Hauptordner.
+- Strukturierte Artikel-Daten (schema.org, JSON-LD) stehen im Kopf von `index.html`: Titel, Beschreibung, Bilder, Datum der Erstveröffentlichung und der letzten Änderung, Autor.
 
 ## Datenschutz
 
@@ -21,7 +37,7 @@ Eine einzelne Seite (`index.html`) mit eingebettetem CSS und einem kleinen eigen
 
 ## Quellen
 
-Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (115 Einträge) steht am Ende der Seite. Abrufstand: 16. Oktober 2026.
+Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (115 Einträge) steht am Ende der Seite. Abrufstand: 17. Oktober 2026.
 
 ## Schriftlizenzen
 
@@ -30,11 +46,11 @@ Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis
 
 ## Bildnachweise (Ordner `images/`)
 
-Die Fotos wurden verkleinert, ohne Kameradaten gespeichert und teils als Ausschnitt gezeigt.
+Die Fotos wurden verkleinert, ohne Kameradaten als WebP gespeichert und teils als Ausschnitt gezeigt.
 
-- `uhrturm-abend.jpg`: Laszlo Biro, https://unsplash.com/photos/a-clock-tower-in-the-middle-of-a-city-at-night-tVwOW-Ikklc, Unsplash-Lizenz
-- `sturm-fahne.jpg`: jorono, Pixabay (Nr. 3566647), Pixabay-Inhaltslizenz
-- `liebenau-abend.jpg` und `schal-klagenfurt.jpg`: eigene Fotos von Günter Kohlhofer
+- `uhrturm-abend.webp`: Laszlo Biro, https://unsplash.com/photos/a-clock-tower-in-the-middle-of-a-city-at-night-tVwOW-Ikklc, Unsplash-Lizenz
+- `sturm-fahne.webp`: jorono, Pixabay (Nr. 3566647), Pixabay-Inhaltslizenz
+- `liebenau-abend.webp` und `schal-klagenfurt.webp`: eigene Fotos von Günter Kohlhofer
 
 ## Offenlegung
 
