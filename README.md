@@ -18,6 +18,8 @@ Bei jeder inhaltlichen Änderung an drei Stellen nachziehen:
 
 Reine Gestaltungs- oder Technikänderungen kommen nicht ins Änderungsprotokoll.
 
+Der Titel der Chronologie nennt die Jahre seit der Eröffnung von Liebenau 1997 (2026: 29 Jahre) und muss jedes Jahr mitgezogen werden.
+
 ## Suchmaschinen
 
 - `sitemap.xml` und `robots.txt` liegen im Hauptordner.
