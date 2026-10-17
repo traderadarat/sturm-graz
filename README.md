@@ -38,7 +38,7 @@ Der Titel der Chronologie nennt die Jahre seit der Eröffnung von Liebenau 1997 
 
 ## Quellen
 
-Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (126 Einträge) steht am Ende der Seite. Abrufstand: 17. Oktober 2026.
+Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (128 Einträge) steht am Ende der Seite. Abrufstand: 17. Oktober 2026.
 
 ## Schriftlizenzen
 
