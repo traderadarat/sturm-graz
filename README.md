@@ -21,7 +21,7 @@ Eine einzelne Seite (`index.html`) mit eingebettetem CSS und einem kleinen eigen
 
 ## Quellen
 
-Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (113 Einträge) steht am Ende der Seite. Abrufstand: 16. Oktober 2026.
+Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (115 Einträge) steht am Ende der Seite. Abrufstand: 16. Oktober 2026.
 
 ## Schriftlizenzen
 
