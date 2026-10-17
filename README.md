@@ -39,3 +39,7 @@ Die Fotos wurden verkleinert, ohne Kameradaten gespeichert und teils als Ausschn
 ## Offenlegung
 
 Offenlegung nach § 25 Mediengesetz und Datenschutzhinweise stehen am Ende der Seite (Abschnitt „Offenlegung und Datenschutz“).
+
+## Adresse
+
+Die Seite ist unter https://sturm-fakten.at/ erreichbar (Domain bei easyname, DNS auf GitHub Pages).
