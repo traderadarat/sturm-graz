@@ -483,7 +483,7 @@ header.hero h1 span + span { color: #e9b44c; }
 @media (max-width: 760px) { .columns { margin-top: 2.8rem; } .col-value { font-size: 0.72rem; line-height: 1.2; } }
 .legend .key i { background: var(--gold); }
 article { counter-reset: kapitel; }
-article > h2 { counter-increment: kapitel; position: relative; color: #fff; background: #0b0b0b; box-shadow: 0 0 0 100vmax #0b0b0b; clip-path: inset(0 -100vmax); margin: 5.5rem 0 2.2rem; padding: 2.6rem 0 2.4rem; font-size: clamp(2.3rem, 5vw, 3.4rem); line-height: 0.98; }
+article > h2 { counter-increment: kapitel; position: relative; color: #fff; background: #14213d; box-shadow: 0 0 0 100vmax #14213d; clip-path: inset(0 -100vmax); margin: 5.5rem 0 2.2rem; padding: 2.6rem 0 2.4rem; font-size: clamp(2.3rem, 5vw, 3.4rem); line-height: 0.98; }
 article > h2::before { content: counter(kapitel, decimal-leading-zero); display: block; width: auto; height: auto; background: none; margin: 0 0 0.6rem; font-family: var(--display); font-weight: 900; font-size: clamp(3.2rem, 8vw, 5.2rem); line-height: 0.8; color: #e9b44c; letter-spacing: 0.01em; }
 article > h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 4.5rem; height: 6px; background: #e9b44c; }
 article > h2 + p { font-size: 1.22rem; line-height: 1.6; }
@@ -494,6 +494,9 @@ blockquote { border-left-width: 8px; background: var(--green-wash); padding: 1.2
 .kf-row dt { font-size: 2.8rem; }
 .chart { border-top: 0; padding: 1.4rem 1.4rem 1.2rem; background: var(--wash); border-radius: 10px; }
 @media (prefers-reduced-motion: reduce) { .einwand { transition: none; } .einwand:hover { transform: none; } }
+/* Zweitfarbe Nachtblau */
+.kapitel { background: #14213d; }
+html:root:not([data-theme="dark"]) .kurz, html:root:not([data-theme="dark"]) blockquote { background: #eef1f7; }
 @media print { article > h2 { color: #000; background: none; box-shadow: none; clip-path: none; padding: 0; } article > h2::before { color: #000; } }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="4aff2f45-9b9f-4996-a2e6-9cc586296731" data-domains="sturm-fakten.at" data-do-not-track="true"></script>
