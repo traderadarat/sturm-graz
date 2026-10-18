@@ -1031,5 +1031,47 @@ details.mehr[open] > summary .mehr-zeit::after { transform: translateY(0.12rem) 
   aktualisieren();
 })();
 </script>
+<script>
+/* Anonyme Lese-Events für Umami (keine Cookies, keine personenbezogenen Daten) */
+(function () {
+  function track(name, data) {
+    var versuche = 0;
+    (function senden() {
+      if (window.umami && typeof window.umami.track === 'function') {
+        data ? window.umami.track(name, data) : window.umami.track(name);
+      } else if (versuche++ < 20) {
+        setTimeout(senden, 500);
+      }
+    })();
+  }
+  var ziele = [['die-haeufigsten-einwaende', 'Einwände erreicht'], ['fazit', 'Fazit erreicht']];
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (eintraege) {
+      eintraege.forEach(function (e) {
+        if (e.isIntersecting) { track(e.target.getAttribute('data-ziel')); io.unobserve(e.target); }
+      });
+    });
+    ziele.forEach(function (z) {
+      var el = document.getElementById(z[0]);
+      if (el) { el.setAttribute('data-ziel', z[1]); io.observe(el); }
+    });
+  }
+  var quellen = document.querySelector('details.src-list');
+  if (quellen) {
+    var gemeldet = false;
+    quellen.addEventListener('toggle', function () {
+      if (quellen.open && !gemeldet) { gemeldet = true; track('Quellen aufgeklappt'); }
+    });
+  }
+  var kanaele = { fb: 'Facebook', wa: 'WhatsApp', x: 'X', li: 'LinkedIn', tg: 'Telegram', mail: 'E-Mail', copy: 'Link kopieren', native: 'Weitere' };
+  document.querySelectorAll('.share .sh').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var kanal = 'Andere';
+      Object.keys(kanaele).forEach(function (k) { if (b.classList.contains(k)) kanal = kanaele[k]; });
+      track('Teilen', { kanal: kanal });
+    });
+  });
+})();
+</script>
 </body>
 </html>
