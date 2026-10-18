@@ -468,7 +468,7 @@ header.hero::before { content: ""; position: absolute; top: 0; right: 0; bottom:
 header.hero::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: auto; height: auto; -webkit-mask-image: none; mask-image: none; animation: none; background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.88) 32%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 35%); z-index: 0; pointer-events: none; }
 header.hero h1 span + span { color: #e9b44c; }
 @keyframes uhrturm-zoom { from { transform: scale(1.18); } to { transform: scale(1); } }
-@media (max-width: 760px) { header.hero::after { background: linear-gradient(0deg, #000 25%, rgba(0, 0, 0, 0.55) 100%); } }
+@media (max-width: 760px) { header.hero::before { background-position: 64% 30%; background-size: auto 70%; } header.hero::after { background: linear-gradient(0deg, #000 38%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.15) 100%); } }
 @media (prefers-reduced-motion: reduce) { header.hero::before { animation: none; } }
 @media print { header.hero::before, header.hero::after { display: none; } header.hero h1 span + span { color: inherit; } }
 </style>
