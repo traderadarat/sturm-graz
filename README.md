@@ -2,7 +2,7 @@
 
 Faktenanalyse zum wirtschaftlichen, gesellschaftlichen und internationalen Wert des SK Sturm Graz für die Stadt Graz: Werbewert, Wertschöpfung, Steuern, Stadionfrage, soziales Engagement von Verein und Fans.
 
-Text und Recherche: Günter Kohlhofer, Graz. Erstveröffentlichung 16. Oktober 2026, zuletzt aktualisiert 17. Oktober 2026.
+Text und Recherche: Günter Kohlhofer, Graz. Erstveröffentlichung 16. Oktober 2026, zuletzt aktualisiert 21. Oktober 2026.
 
 ## Aufbau
 
@@ -38,7 +38,7 @@ Der Titel der Chronologie nennt die Jahre seit der Eröffnung von Liebenau 1997 
 
 ## Quellen
 
-Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (133 Einträge) steht am Ende der Seite. Abrufstand: 17. Oktober 2026.
+Alle Zahlen sind im Text nummeriert belegt, das vollständige Quellenverzeichnis (145 Einträge) steht am Ende der Seite. Abrufstand: 21. Oktober 2026.
 
 ## Schriftlizenzen
 
