@@ -1367,11 +1367,17 @@ html body.v3 .einwand-flaeche .einwand { background: #fff; border-color: transpa
       }
     })();
   }
+  /* Gescrollt oder per Link gesprungen? (gleiche Regel wie bei den neuen Messpunkten) */
+  var sprungZeit = location.hash.length > 1 ? Date.now() : 0;
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('a[href^="#"]')) sprungZeit = Date.now();
+  }, true);
+  function weg() { return Date.now() - sprungZeit < 4000 ? 'Sprung' : 'gescrollt'; }
   var ziele = [['die-haeufigsten-einwaende', 'Einwände erreicht'], ['fazit', 'Fazit erreicht']];
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (eintraege) {
       eintraege.forEach(function (e) {
-        if (e.isIntersecting) { track(e.target.getAttribute('data-ziel')); io.unobserve(e.target); }
+        if (e.isIntersecting) { track(e.target.getAttribute('data-ziel'), { weg: weg() }); io.unobserve(e.target); }
       });
     });
     ziele.forEach(function (z) {
